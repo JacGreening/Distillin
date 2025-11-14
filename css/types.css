@@ -1,0 +1,115 @@
+h1
+{
+    font-size: 600%;
+    color: #000000;
+    text-shadow: 30px 25px 30px rgb(130, 129, 129), 10px 10px 15px rgb(244, 244, 244);
+    font-family: headingFont;
+    letter-spacing: 25px;
+    line-height: 125%;
+    font-weight: lighter;
+}
+
+
+h2
+{
+    margin:25px;
+    padding-top: 50px;
+}
+
+.gridContainer
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+
+/*REVEAL ON SCROLL  --  USE JAVASCRIPT*/
+#moveUpBox
+{
+    position:sticky;
+}
+
+#liquorSplashInGlass
+ {
+    height:fit-content;
+    position: sticky;
+    width: 100%;
+}
+
+
+.content
+{
+    font-size: 700%;
+    color: #f5f5f5;
+    text-shadow: 30px, 25px, 30px, rgb(36, 35, 35), 10px 10px 15px rgb(200, 200, 200);
+    font-family: headingFont;
+    letter-spacing: 20px;
+    line-height: 115%;
+    font-weight: lighter;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+
+
+
+@font-face
+{
+    font-family: canada;
+    src: url(../fonts/Rcmp-lgv1D.otf);
+}
+#canada
+{
+    font-family: canada;
+    font-size: 550%;
+}
+
+
+@font-face
+{
+    font-family: tennessee;
+    src: url(../fonts/CowboyCadaver-K6jp.ttf);
+}
+#tennessee
+{
+    font-family: tennessee;
+    font-size: 650%;
+}
+
+
+@font-face
+{
+    font-family: japanese;
+    src: url(../fonts/Japanese3017-Eljn.ttf);
+}
+#japanese
+{
+    font-family: japanese;
+    font-size: 650%;
+    font-weight: lighter;
+}
+
+
+@font-face
+{
+    font-family: irish;
+    src: url(../fonts/Irishuncialphabet-lKzq.ttf);
+}
+#irish
+{
+    font-family: irish;
+    font-size: 650%;
+    font-weight: lighter;
+}
+
+p
+{
+    font-family:sans-serif;
+    font-weight: lighter;
+    letter-spacing: 5%;
+    line-height: 25px;
+}
+

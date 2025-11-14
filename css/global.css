@@ -1,0 +1,193 @@
+/*
+    COLORS:
+        h1: Black // #000000
+        h2: #262525;
+        h3: #262525;
+        search: rgb(236, 236, 0)
+        body container: rbg(244, 244, 244)
+        body general container: rgb(200, 200, 200);
+*/
+
+body
+{
+    background-color: rgb(244, 244, 244);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+@font-face
+{
+    font-family: headingFont;
+    src: url(../fonts/kirsty.regular.otf);
+}
+
+h1
+{
+    color: #000000;
+    font-size: 2000%;
+    text-shadow: 30px 25px 30px rgb(130, 129, 129), 10px 10px 15px rgb(244, 244, 244);
+    font-family: headingFont;
+    letter-spacing: 25px;
+    line-height: 125%;
+    font-weight: lighter;
+    margin-bottom: 5%;
+    margin-top:10%;
+    margin-inline: 15px;
+}
+
+
+h2
+{
+    font-family: headingFont;
+    font-size: x-large;
+    font-weight: light;
+    color: #262525;
+}
+
+h3
+{
+    color:#262525;
+    font-family: headingFont;
+    font-weight: lighter;
+    
+}
+
+p
+{   
+    font-family: headingFont;
+    text-align:left;
+}
+
+
+button
+{
+    background-color: rgb(2, 2, 88);
+    border-radius: 10%;
+    border:none;
+    font-family: cowboy outlaw;
+    font-weight: bold;
+}
+
+button:hover 
+{
+    box-shadow: #473326;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+a
+{
+    color:inherit; 
+    text-decoration: none;
+}
+    
+a:hover
+{
+        text-decoration: underline;
+        text-decoration-color: #f5f5f5;
+}
+
+
+
+.gridContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position:sticky;
+    word-wrap: wrap;
+    text-align: center;
+}
+
+
+.gridGeneral
+{
+    grid-template-columns: 1fr;
+    display: grid;
+    padding-top: 50px;
+    background-color: rgb(200, 200, 200);
+    width: 100%;
+    position:sticky;
+    padding-bottom: 50px;
+}
+
+.navBar
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    position: static; 
+    display: grid;
+    background-color: rgb(200, 200, 200);
+    height: 60px;
+    align-items: center;
+    font-family: headingFont;
+}
+
+
+input [type=text]
+{
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.wiskeyAdd
+{
+    width: 50px;
+    height: 50px;
+    background-color: #f5f5f5;
+}
+
+
+.search
+{
+    background-color: rgb(236, 236, 0);
+    padding: 20px;
+    font-size: large;
+    color: white;
+}
+
+.img
+{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    height: 100%;
+}
+
+.img-bottle
+{
+    
+    align-items: baseline;
+    justify-content: center;
+    display: grid;
+    height: 100%;
+}
+
+iframe
+{
+    margin: auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow:30px 25px 30px rgb(130, 129, 129);
+}
+
+
+section {
+    
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    min-height: 50vh;
+    
+    padding-top: 40px;
+    padding-right: 9%;
+    padding-bottom: 80px;
+    padding-left: 9%;
+
+}
