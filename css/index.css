@@ -1,0 +1,22 @@
+table
+{
+    line-height: 200%;
+    margin-inline: 5%;
+    border-collapse: collapse;
+}
+
+thead
+{
+    font-size: x-large;
+}
+
+th 
+{
+    color:rgb(80, 66, 48);
+    font-size: larger;
+}
+
+td
+{
+    padding: 15px;
+}

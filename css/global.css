@@ -1,6 +1,6 @@
 /*
     COLORS:
-        h1: Black // #000000
+        H1: rgb(196, 174, 148)
         h2: #262525;
         h3: #262525;
         search: rgb(236, 236, 0)
@@ -11,7 +11,8 @@
 body
 {
     background-color: rgb(244, 244, 244);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -26,9 +27,9 @@ body
 
 h1
 {
-    color: #000000;
-    font-size: 2000%;
-    text-shadow: 30px 25px 30px rgb(130, 129, 129), 10px 10px 15px rgb(244, 244, 244);
+    color: rgb(196, 174, 148);
+    font-size: 1500%;
+    text-shadow: 35px 5px 50px rgba(70, 39, 20, 0.263), 7px 7px 30px rgba(244, 244, 244, 0.597);
     font-family: headingFont;
     letter-spacing: 25px;
     line-height: 125%;
@@ -44,12 +45,12 @@ h2
     font-family: headingFont;
     font-size: x-large;
     font-weight: light;
-    color: #262525;
+    color:rgb(80, 66, 48);
 }
 
 h3
 {
-    color:#262525;
+    color:rgb(80, 66, 48);
     font-family: headingFont;
     font-weight: lighter;
     
@@ -64,11 +65,12 @@ p
 
 button
 {
-    background-color: rgb(2, 2, 88);
-    border-radius: 10%;
+    background-color:chocolate;
+    border-radius: 15%;
     border:none;
     font-family: cowboy outlaw;
     font-weight: bold;
+    
 }
 
 button:hover 
@@ -96,19 +98,25 @@ a:hover
 .gridContainer
 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     position:sticky;
     word-wrap: wrap;
     text-align: center;
+    background-image: url(../images/headerBackground.jpg);
+    background-repeat: no-repeat;
 }
 
+.gridHeadTitle
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 .gridGeneral
 {
     grid-template-columns: 1fr;
     display: grid;
     padding-top: 50px;
-    background-color: rgb(200, 200, 200);
     width: 100%;
     position:sticky;
     padding-bottom: 50px;
@@ -119,10 +127,11 @@ a:hover
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     position: static; 
     display: grid;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(196, 174, 148);
     height: 60px;
     align-items: center;
     font-family: headingFont;
+    color: rgb(80, 66, 48);;
 }
 
 
@@ -178,16 +187,13 @@ iframe
 }
 
 
-section {
-    
-    margin-top: 1%;
-    margin-left: 3%;
-    margin-right: 3%;
-    min-height: 50vh;
-    
-    padding-top: 40px;
-    padding-right: 9%;
-    padding-bottom: 80px;
-    padding-left: 9%;
+section 
+{
+    background-color:rgba(102, 75, 55, 0.341);
+    border-radius: 10%;
 
+    margin-top: 8%;
+    margin-inline: 8%;
+
+    padding: 3%;
 }

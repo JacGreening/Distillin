@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/global.css">
-
+    <link rel="stylesheet" href="../css/index.css">
 
     <title>Distillin'</title>
 </head>
@@ -22,52 +22,93 @@
 
 <body>    
     <div class="gridContainer">
-        <div ><h1>Dist<br>illin</h1>
-            <h2>We've got an entire database at your disposal. Irish or Tennesse? <br>Bourbon or Scotch? Doesn't matter, we've got it all.</h2>
-                <!--<h2>Whether you're a casual drinker, a Friday night superstar, or a self-proclaimed Whiskey snob - we have something for you!</h2>-->
+        <div class="gridHeadTitle" ><h1>Dist<br>illin</h1>
+            <!--<h2>We've got an entire database at your disposal. Irish or Tennesse? 
+                <br>Bourbon or Scotch? Doesn't matter, we've got it all.</h2>
+                <h2>Whether you're a casual drinker, a Friday night superstar, or a self-proclaimed Whiskey snob - we have something for you!</h2>-->
         </div>
-        <div><img src="../images/waterGlass.png" alt="generic bottle" width="100%" class="img-bottle"></div>
-            </div>
+    </div>
+
 
 <section>
-
     <div class="gridGeneral">
         <h2>Earn Badges - Beat your Friends</h2>
         <h3>Whether you're a casual drinker, a Friday night superstar, or a self-proclaimed Whiskey snob - we have something for you!</h3>
-        <img src="./images/badgesClipart.png" alt="Trophey, world, and banner clipart images">
+        <table>
+            <thead>
+                <h2>Leaderboard</h2>
+            </thead>
+            <th>Place</th>
+            <th>Number of Drinks</th>
+            <th>Name</th>
+            
+            <tr>
+                <td>1st</td>
+                <td>123</td>
+                <td>Jacklyn</td>
+            </tr>
+            <tr>
+                <td>2nd</td>
+                <td>78</td>
+                <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+                <td>3rd</td>
+                <td>51</td>
+                <td>Francis Bacon</td>
+            </tr>
+        </table>
     </div>
+    </section>
 
+
+    <section>
     <div class="gridGeneral">
         <h2>What Happened Last Night??</h2>
         <h3>Your previous drinks, in case you forgot</h3>
         <!--CSS ILLEGITAMITE  -- TAKEN FROM FSF--> 
-        <section class="faqs" id="white">
-        <div class="accordion">
+        <div class="gridGeneral">
             <!-- Accordion Item 1 -->
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <h3>Last Drink TYPE, DATE, RATING?</h3>
-                    <p>create badges</p>
-                    <p style="text-align: right; color: rgb(15,58,102);"><i class="fa-solid fa-caret-down"></i></p>
-                </div>
-                <div class="accordion-content">
-                    <p>NOTES</p>
-                </div>
-            </div>
-
-            <!-- Accordion Item 6-->
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <h3>Last Drink TYPE, DATE, RATING?</h3>
-                    <p style="text-align: right; color: rgb(15,58,102);"><i class="fa-solid fa-caret-down"></i></p>
-                </div>
-                <div class="accordion-content">
-                    <p>NOTES</p>    
-                </div>
-            </div>
+                <table>
+            <thead>
+                <h2>Your recent sips</h2>
+            </thead>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Rating</th>
+            <th>Comments</th>
+            
+            <tr>
+                <td>Ole Smokey Salted Carmel</td>
+                <td>Tenessee Whiskey</td>
+                <td>3/5</td>
+                <td>Good but nothing to write home about. </td>
+            </tr>
+            <tr>
+                <td>Blackberry Crown</td>
+                <td>American Whiskey</td>
+                <td>4.5/5</td>
+                <td>Perfect summer sip when mixed with lemonade</td>
+            </tr>
+            <tr>
+                <td>Johnnie Walker Black Label</td>
+                <td>Scotch</td>
+                <td>4/5</td>
+                <td>Smooth, smokey flavor, great to sip over an ice cube</td>
+            </tr>
+            <tr>
+                <td>Makers Mark</td>
+                <td>Bourbon</td>
+                <td>4.5/5</td>
+                <td>Smooth, little burn, would buy again</td>
+            </tr>
+        </table>
         </div>
     </div>
+</section>
 
+
+<section>
     <div class="gridGeneral">
         <h2>Local Dives</h2>
         <h3>Lets try something new somewhere old. Or try something old somewhere new (to you anyway)</h3>
