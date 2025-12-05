@@ -122,18 +122,72 @@ a:hover
     padding-bottom: 50px;
 }
 
-.navBar
-{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    position: static; 
-    display: grid;
-    background-color: rgb(196, 174, 148);
-    height: 60px;
-    align-items: center;
-    font-family: headingFont;
-    color: rgb(80, 66, 48);;
+
+ .menu_bar ul {
+    list-style: none;
+    display: flex;
+    
 }
 
+.menu_bar ul li {
+    position: relative; 
+}
+
+.menu_bar ul li a {
+    padding: 10px 30px;
+    color: #ac9484;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover 
+{
+    color: rgba(80, 66, 48, 0.371);
+}
+
+/*DROP DOWN FEATURE*/
+
+.drop {
+    
+    display: none;
+    position: absolute; 
+    left: 0;
+    top: 100%; 
+    background-color:rgb(80, 66, 48);;
+    z-index: 1000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.menu_bar ul li:hover .drop {
+    display: block;
+}
+
+.drop ul {
+    padding: 0;
+    margin: 0; 
+    display: block;
+    list-style: none; 
+}
+
+.drop ul li {
+    width: 150px; 
+    padding: 10px 0; 
+    text-align: center; 
+}
+
+.drop ul li a 
+{
+    display: block; 
+    color: #ac9484;
+    text-decoration: none; 
+    padding: 10px 0; 
+}
+
+.drop ul li a:hover {
+    color: #b3dbf4;
+}
 
 input [type=text]
 {
@@ -196,4 +250,139 @@ section
     margin-inline: 8%;
 
     padding: 3%;
+}
+
+
+@media (max-width: 360px)
+{
+    body 
+    {
+        font-size: smaller;
+    }
+}
+
+
+@media (max-width: 480px)
+{
+    body 
+    {
+    background-color: rgb(244, 244, 244);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;    
+    width: 100%;
+    }
+
+
+    h1
+    {
+    color: rgb(196, 174, 148);
+    font-size: larger;
+    text-shadow: 35px 5px 50px rgba(70, 39, 20, 0.263), 7px 7px 30px rgba(244, 244, 244, 0.597);
+    font-family: headingFont;
+    letter-spacing: 20px;
+    line-height: 130%;
+    font-weight: lighter;
+    margin-bottom: 5%;
+    margin-top:10%;
+    margin-inline: 15px;
+    }
+
+
+    p
+{   
+    font-family: headingFont;
+    text-align:left;
+    width: 100%;
+}
+
+
+.gridGeneral
+{
+    grid-template-columns: 1fr;
+    display: grid;
+    padding-top: 50px;
+    width: 100%;
+    position:sticky;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+
+
+.gridHeadTitle
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+    iframe
+{
+    margin: auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow:30px 25px 30px rgb(130, 129, 129);
+    width: 75%;
+    height: 100%;
+
+}
+
+
+ .menu_bar ul 
+ {
+    background: #473326;
+    list-style: none;
+    display: flex;
+    height: 60px;
+    margin: auto;
+    text-align: right;
+}
+
+.menu_bar ul li 
+{
+    position: relative; 
+
+}
+
+.menu_bar ul li a {
+    padding: 10px 30px;
+    color: #ac9484;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+.menu_bar ul li a:hover 
+{
+    color: rgba(80, 66, 48, 0.371);
+}
+
+.drop {
+    display: none;
+    position: absolute; 
+    left: 0;
+    top: 100%; 
+    background-color:rgb(80, 66, 48);;
+    z-index: 1000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+}
+
+
+
+
+@media (max-width: 768px)
+{
+    body 
+    {
+        font-size: 15px;
+    }
 }
